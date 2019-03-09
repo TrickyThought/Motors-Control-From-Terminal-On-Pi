@@ -18,15 +18,15 @@ try:
     while 1:
         try:
             c = sys.stdin.read(1)
-            if repr(c)=="w":
+            if c=="w":
                 print("forward")
-            elif repr(c)=="s":
+            elif c=="s":
                 print("backward")
-            elif repr(c)=="a":
+            elif c=="a":
                 print("left")
-            elif repr(c)=="d":
+            elif c=="d":
                 print("right")
-            elif repr(c)=="z":
+            elif c=="z":
                 print("stop")
         except IOError: pass
 finally:
