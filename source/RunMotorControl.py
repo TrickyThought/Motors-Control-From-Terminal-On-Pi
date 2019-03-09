@@ -36,15 +36,22 @@ try:
             c = sys.stdin.read(1)
             if c=="w":
                 print("forward")
+                robot.forward(150)
             elif c=="s":
                 print("backward")
+                robot.backward(150)
             elif c=="a":
                 print("left")
+                robot.left(150)
             elif c=="d":
                 print("right")
+                robot.right(150)
             elif c=="z":
                 print("stop")
+                robot.stop()
+                break
         except IOError: pass
 finally:
+    robot.stop()
     termios.tcsetattr(fd, termios.TCSAFLUSH, oldterm)
     fcntl.fcntl(fd, fcntl.F_SETFL, oldflags)
