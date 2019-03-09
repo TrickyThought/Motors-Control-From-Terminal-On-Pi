@@ -36,16 +36,16 @@ try:
             c = sys.stdin.read(1)
             if c=="w":
                 print("forward")
-                robot.forward(0.5)
+                robot.forward(1)
             elif c=="s":
                 print("backward")
-                robot.backward(0.5)
+                robot.backward(1)
             elif c=="a":
                 print("left")
-                robot.left(0.5)
+                robot.left(1)
             elif c=="d":
                 print("right")
-                robot.right(0.5)
+                robot.right(1)
             elif c=="z":
                 print("stop")
                 robot.stop()
