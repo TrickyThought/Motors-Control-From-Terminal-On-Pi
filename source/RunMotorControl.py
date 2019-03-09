@@ -18,16 +18,16 @@ try:
     while 1:
         try:
             c = sys.stdin.read(1)
-			if repr(c)=="w":
-				print("forward")
-			elif repr(c)=="s":
-				print("backward")
-			elif repr(c)=="a":
-				print("left")
-			elif repr(c)=="d":
-				print("right")
-			elif repr(c)=="z":
-				print("stop")
+            if repr(c)=="w":
+                print("forward")
+            elif repr(c)=="s":
+                print("backward")
+            elif repr(c)=="a":
+                print("left")
+            elif repr(c)=="d":
+                print("right")
+            elif repr(c)=="z":
+                print("stop")
         except IOError: pass
 finally:
     termios.tcsetattr(fd, termios.TCSAFLUSH, oldterm)
