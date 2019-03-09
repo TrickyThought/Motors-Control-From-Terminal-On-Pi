@@ -49,6 +49,8 @@ try:
             elif c=="z":
                 print("stop")
                 robot.stop()
+            elif c=="x":
+                print("exit")
                 break
         except IOError: pass
 finally:
