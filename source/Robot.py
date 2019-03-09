@@ -99,7 +99,7 @@ class Robot:
         """
         # Set motor speed and move both forward.
         self._left_speed(speed)
-        self._right_speed(0)
+        self._right_speed(-1*speed)
         # If an amount of time is specified, move for that time and then stop.
         if seconds is not None:
             time.sleep(seconds)
@@ -111,7 +111,7 @@ class Robot:
         spin for that amount of time and then stop.
         """
         # Set motor speed and move both forward.
-        self._left_speed(0)
+        self._left_speed(-1*speed)
         self._right_speed(speed)
         # If an amount of time is specified, move for that time and then stop.
         if seconds is not None:
