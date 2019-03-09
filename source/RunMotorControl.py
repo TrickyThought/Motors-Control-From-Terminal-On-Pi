@@ -1,8 +1,8 @@
 import termios, fcntl, sys, os
 
-from adafruit_motorkit import MotorKit
+#from adafruit_motorkit import MotorKit
 
-kit = MotorKit()
+#kit = MotorKit()
 
 fd = sys.stdin.fileno()
 
